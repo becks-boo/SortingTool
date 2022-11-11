@@ -9,9 +9,12 @@
     <form action="" method="">
         <div class="drop-zone">
             <span class="drop-zone-prompt">Datei hier reinziehen oder anklicken zum Uploaden</span>
-            <input type="file" name="theFile" class="drop-zone-input" multiple>
+            <input type="file" name="theFile" class="drop-zone-input" required multiple>
         </div>
-        <input type="submit" value="">
+<!--        <input type="submit" value="Upload">-->
+        <input type="text" name="Name" placeholder="Name">
+        <input type="email" name="Email Address" placeholder="Email" required>
+        <button type="submit">Submit</button>
     </form>
 
     <script src="./src/main.js"></script>

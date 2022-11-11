@@ -54,3 +54,14 @@ function updateThumbnail(dropZoneElement, file) {
 
     thumbnailElement.dataset.label = file.name;
 }
+
+// upload google drive api tutorial
+
+const formElem = document.querySelector("form");
+formElem.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    await fetch("/upload", {
+        method: "POST",
+        body: new FormData(formElem)
+    });
+});
